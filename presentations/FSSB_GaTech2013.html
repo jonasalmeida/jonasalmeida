@@ -148,6 +148,10 @@
         <img src="neutralNetCode.png" width="100%">
     </div>
 
+    <div id="prepMS" class="step slide" data-x="0" data-y="0" data-z="-3000" data-scale="1">
+        <img src="prepMS.png" width="100%">
+    </div>
+
     <div id="bigData" class="step slide" data-x="1000" data-y="-2400" data-rotate="-90">
         <p>Big Data: when size, assynchrony, or heterogeneity exceed the ability of the local resources to handle it.</p>
         <p>&nbsp;</p>
@@ -208,7 +212,35 @@
     <div id="qmachineVolunteering" class="step slide" data-x="2000" data-y="-750" data-z="-3000">
     <img src="voluteeringHPC.png" width="65%">
     <p style="font-size:large;color:navy">Foating-point performance distribution of the Top500 fastest supercomputers as of Nov 2012, given in terms of representative commodity laptops.</p>
+    <div style="position:absolute;top:10px;right:10px;width:50%">
+        "Even if we were given all the National Science Foundation supercomputing centers combined for a couple of months, that is still fewer resources than we have now, said Dr. Vijay Pande, the Stanford University biologist who directs Folding@home."<br>&nbsp;<br><i style="font-size:small">NYT 2002 Apr 23 "Supercomputing '@Home' Is Paying Off"</i>
+    </div>
               
+    </div>
+
+
+    <div id="conclusions" class="step slide" data-x="-1000" data-y="0">
+        <li><b style="color:blue">Safer</b>: browser sandbox</li>
+        <li>More <b style="color:blue">reproducible</b>, versioned hosting</li>
+        <li><b style="color:blue">Pervasive</b>, including mobile</li>
+        <li><b style="color:blue">Scalable</b></li>
+        <li id="socialCoding">Big Data &rarr; <b style="color:blue">Big Coding</b></li>
+        <img id="gitHubSocialCoding" src="gitHubSocialCoding.png" width="20%" style="visibility:hidden">
+        <img id="githubStatistics" src="githubStatistics.png" width="60%" style="visibility:hidden">
+        <img id="githubLanguages" src="githubLanguages.png" width="60%" style="visibility:hidden">
+
+        <script>
+        socialCoding.onclick=function(){
+            gitHubSocialCoding.style.visibility="visible";
+        };
+        gitHubSocialCoding.onclick=function(){
+            githubStatistics.style.visibility="visible";
+        };
+        githubStatistics.onclick=function(){
+            githubLanguages.style.visibility="visible";
+        };
+
+        </script>  
     </div>
 
     <div id="theEnd" class="step" data-x="1000" data-y="-1000" data-z="-100" data-rotate-x="-40" data-rotate-y="5" data-scale="6">
